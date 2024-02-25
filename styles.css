@@ -5,10 +5,18 @@
 }
 body{
     font-family: "Poppins", sans-serif;
-    background: #001e4d;
+    background: url('bg-img-1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .app {
-    background: #fff;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.5);
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
@@ -20,6 +28,7 @@ body{
     color: #001e4d;
     font-weight: 700;
     border-bottom: 1px solid #333;
+    border-left: 10px;
     padding-bottom: 30px;
 }
 .app .quiz {
@@ -31,11 +40,12 @@ body{
     font-weight: 600;
 }
 .btn {
-    background: #fff;
-    color: #222;
-    font-weight: 500;
+    background: transparent;
+    color: #001e4d;
+    font-size: 15px;
+    font-weight: 600;
     width: 100%;
-    border: 1px solid #222;
+    border: 1px solid #2e2d2d;
     padding: 10px;
     margin: 10px 0;
     text-align: left;
