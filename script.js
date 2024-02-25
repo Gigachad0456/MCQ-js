@@ -134,15 +134,10 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 function startQuiz() {
-    let playerName = prompt("Enter your name:");
-    if (playerName === null || playerName === "") {
-        playerName = "Player";
-    }
     currentQuestionIndex = 0;
     score = 0;
     nextBtn.innerHTML = "Next";
     showQuestion();
-    alert("Welcome " + playerName + "!");
 }
 
 function showQuestion() {
